@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {NavLink, Link, Route, Switch, Redirect} from 'react-router-dom'
+import {NavLink, Route, Switch, Redirect} from 'react-router-dom'
 import About from './views/about'
 import Home from './views/home'
 import Ref from './views/ref'
@@ -8,11 +7,12 @@ import Context from './views/context'
 import ChildContext from './views/childContext'
 import Temperature from './views/temperature';
 import ForwordRef from './views/formordRef';
+import setState from './views/setState';
 import UseState from './views/react-hooks/useState' 
 import UseContext from './views/react-hooks/useContext' 
 import UseEffect from './views/react-hooks/useEffect';
 import UseReducer from './views/react-hooks/useReducer';
-import setState from './views/setState';
+import UseMemo from './views/react-hooks/useMemo';
 
 function App() {
   return (
@@ -36,11 +36,12 @@ function App() {
             <NavLink to="/childContext" className="list-group-item">ChildContext</NavLink>
             <NavLink to="/forwordRef" className="list-group-item">forwordRef</NavLink>
             <NavLink to="/temperature" className="list-group-item">状态提升</NavLink>
+            <NavLink to="/setState" className="list-group-item">setState</NavLink>
             <NavLink to="/useState" className="list-group-item">useState</NavLink>
             <NavLink to="/useContext" className="list-group-item">useContext</NavLink>
             <NavLink to="/useEffect" className="list-group-item">useEffect</NavLink>
             <NavLink to="/useReducer" className="list-group-item">useReducer</NavLink>
-            <NavLink to="/setState" className="list-group-item">setState</NavLink>
+            <NavLink to="/useMemo" className="list-group-item">useMemo</NavLink>
           </div>
         </div>
         <div className="col-xs-6">
@@ -54,11 +55,12 @@ function App() {
                 <Route path="/childContext" component={ChildContext}></Route>
                 <Route path="/forwordRef" component={ForwordRef}></Route>
                 <Route path="/temperature" component={Temperature}></Route>
+                <Route path="/setState" component={setState}></Route>
                 <Route path="/useState" component={UseState}></Route>
                 <Route path="/useContext" component={UseContext}></Route>
                 <Route path="/useEffect" component={UseEffect}></Route>
                 <Route path="/useReducer" component={UseReducer}></Route>
-                <Route path="/setState" component={setState}></Route>
+                <Route path="/useMemo" component={UseMemo}></Route>
                 <Redirect to="/home"></Redirect>
               </Switch>
             </div>
