@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, Route } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import MessageDetail from './messageDetail'
 
 class Message extends React.Component{

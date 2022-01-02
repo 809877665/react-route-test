@@ -1,4 +1,4 @@
-import {Component} from 'React'
+import {Component} from 'react'
 import PropTypes from 'prop-types'
 
 
@@ -46,6 +46,7 @@ ContextDemo2.childContextTypes  = {
   value: PropTypes.string
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => 
   <ContextDemo2 >
   

@@ -1,5 +1,5 @@
 // import React from 'react';
-import { Component } from 'React'
+import { Component } from 'react'
 
 // 摄氏温度转为华氏温度
 function toCelsius (fahrenheit) {

@@ -15,7 +15,7 @@ class MessageDetail extends React.Component {
     console.log('======messageDetail页面====',this.props);
     const id = this.props.match.params.id
     console.log(typeof id);
-    const md = messageDetails.find(md=>md.id == id)
+    const md = messageDetails.find(md=>md.id === id)
     console.log(md);
     return (
       <div>

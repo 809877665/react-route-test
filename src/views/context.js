@@ -1,11 +1,12 @@
 import {Component} from 'react'
 import React from 'react'
-import { Redirect } from 'react-router-dom'
+// import { Redirect } from 'react-router-dom'
 
 const {Provider,Consumer} = React.createContext('default')
 
 // 定义父组件
 export default class ContextDemo extends Component {
+  // eslint-disable-next-line no-useless-constructor
   constructor() {
     super()
   }

@@ -1,4 +1,4 @@
-import {NavLink, Link, Route, Switch, Redirect} from 'react-router-dom'
+import {NavLink, Route, Switch, Redirect} from 'react-router-dom'
 import News from './news'
 import Message from './message'
 

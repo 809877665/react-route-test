@@ -1,5 +1,5 @@
 // import React from 'react';
-import {Component} from 'React'
+import {Component} from 'react'
 
 // class News extends React.Component{
 class News extends Component{
