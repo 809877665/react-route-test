@@ -13,6 +13,7 @@ import UseContext from './views/react-hooks/useContext'
 import UseEffect from './views/react-hooks/useEffect';
 import UseReducer from './views/react-hooks/useReducer';
 import UseMemo from './views/react-hooks/useMemo';
+import PubSub from './views/pubsub';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <NavLink to="/useEffect" className="list-group-item">useEffect</NavLink>
             <NavLink to="/useReducer" className="list-group-item">useReducer</NavLink>
             <NavLink to="/useMemo" className="list-group-item">useMemo</NavLink>
+            <NavLink to="/pubSubTest" className="list-group-item">pubSubTest</NavLink>
           </div>
         </div>
         <div className="col-xs-6">
@@ -61,6 +63,7 @@ function App() {
                 <Route path="/useEffect" component={UseEffect}></Route>
                 <Route path="/useReducer" component={UseReducer}></Route>
                 <Route path="/useMemo" component={UseMemo}></Route>
+                <Route path="/pubSubTest" component={PubSub}></Route>
                 <Redirect to="/home"></Redirect>
               </Switch>
             </div>
